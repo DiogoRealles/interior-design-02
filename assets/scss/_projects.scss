@@ -4,25 +4,41 @@
   background: $dark-100;
   background: linear-gradient(
     180deg,
-    rgba(16, 16, 16, 1) 60%,
-    rgba(255, 255, 255, 1) 40%
+    rgba(16, 16, 16, 1) 70%,
+    rgba(255, 255, 255, 1) 30%
   );
-  padding-block: 8rem;
+  padding-block: 5rem;
 
   .container {
-    .header {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    justify-content: space-between;
+    height: 100%;
+
+    header {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6rem;
 
       h2 {
         font-size: 6rem;
         color: $light-100;
+        text-align: center;
+        max-width: 900px;
+        text-transform: uppercase;
+        line-height: 150%;
       }
 
       p {
-        font-size: 2.4rem;
+        font-size: 2rem;
+        font-weight: 100;
         color: $light-100;
+        text-align: center;
+        max-width: 700px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
     }
   }
