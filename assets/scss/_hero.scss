@@ -1,6 +1,8 @@
 @use './variables' as *;
 
 .hero {
+  padding-block: 8rem;
+
   .container {
     display: flex;
     flex-direction: column;
