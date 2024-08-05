@@ -1,7 +1,8 @@
 @use './variables' as *;
 
 .hero {
-  padding-block: 8rem;
+  background: $light-100;
+  padding-top: 4rem;
 
   .container {
     display: flex;
@@ -11,8 +12,9 @@
       font-size: 2.4rem;
       position: relative;
       line-height: 100%;
-      margin-block: 4rem;
+      margin-top: 2rem;
       text-transform: uppercase;
+      color: $dark-100;
 
       &::before {
         content: '';
@@ -29,29 +31,23 @@
     .title {
       margin-bottom: 4rem;
 
-      h1 {
-        white-space: nowrap;
-        font-size: 9.8rem;
-        text-transform: uppercase;
-        color: $dark-100;
-        line-height: 150%;
-      }
-
       .subtitle {
         display: flex;
         align-items: center;
         gap: 1.4rem;
 
+        h1 {
+          white-space: nowrap;
+        }
+
         h2 {
           font-size: 9.8rem;
-          text-transform: uppercase;
           white-space: nowrap;
-          color: $dark-100;
-          line-height: 150%;
         }
 
         p {
           font-size: 2.4rem;
+          color: $dark-100;
         }
       }
     }

@@ -6,32 +6,44 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 62.5%;
+}
+
 ::selection {
   background: $dark-100;
   color: $light-100;
 }
 
 html {
-  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-size: 1.6rem;
   font-family: $font-body;
-  color: $dark-100;
+  font-weight: 500;
+  background: $dark-100;
+  color: $gray-100;
   font-size: 1.8rem;
-  font-weight: 400;
+  overflow-x: hidden;
   line-height: 150%;
-}
-
-a {
-  color: $dark-100;
-  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ul,
 li {
   list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 button,
@@ -64,8 +76,22 @@ button,
   }
 }
 
-img {
-  max-width: 100%;
-  display: block;
-  object-fit: cover;
+h1,
+h2,
+h3 {
+  line-height: 150%;
+  text-transform: uppercase;
+  color: $dark-100;
+}
+
+h1 {
+  font-size: 9.8rem;
+}
+
+h2 {
+  font-size: 6.4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
 }

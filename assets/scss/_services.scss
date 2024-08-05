@@ -1,6 +1,7 @@
 @use './variables' as *;
 
 .services {
+  background: $light-100;
   padding-block: 8rem;
 
   .container {
@@ -10,15 +11,11 @@
 
     header {
       display: flex;
-      align-items: center;
       justify-content: space-between;
 
-      h2 {
-        font-size: 6rem;
-      }
-
       p {
-        font-size: 2.4rem;
+        max-width: 64rem;
+        color: $dark-100;
       }
     }
 
@@ -32,7 +29,6 @@
 
       div {
         position: relative;
-        cursor: pointer;
         overflow: hidden;
 
         span {
